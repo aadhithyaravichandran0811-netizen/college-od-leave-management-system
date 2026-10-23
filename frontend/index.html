@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College OD & Leave Management System</title>
+  <meta name="description" content="Digital OD and Leave Request Management System for engineering colleges — streamlined approval workflows and attendance integration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-inner">
+        <div class="brand-logo-loading">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" rx="10" fill="#1d4ed8"/>
+            <path d="M10 20L17 27L30 13" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="loading-text">College OD & Leave Management</div>
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+    <div id="page-root"></div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="seed.js"></script>
+  <script src="auth.js"></script>
+  <script src="api.js"></script>
+  <script src="components.js"></script>
+  <script src="pages/login.js"></script>
+  <script src="pages/student.js"></script>
+  <script src="pages/faculty.js"></script>
+  <script src="pages/admin.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

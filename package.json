@@ -1,0 +1,12 @@
+{
+  "name": "eduleave-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "College OD & Leave Management System Root Workspace",
+  "scripts": {
+    "dev": "npm --prefix frontend-react run dev",
+    "dev:frontend": "npm --prefix frontend-react run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "start:backend": "npm --prefix backend start"
+  }
+}
