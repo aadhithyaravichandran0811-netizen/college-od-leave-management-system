@@ -88,6 +88,13 @@ router.get('/me', protect, async (req, res) => {
       }
     }
 
+    res.json({ success: true, user: sessionUser });
+  } catch (err) {
+    console.error('Error fetching /me:', err);
+    res.status(500).json({ message: 'Server error fetching user details' });
+  }
+});
+
 // GET /api/auth/departments — public endpoint for registration form
 router.get('/departments', async (req, res) => {
   try {
@@ -200,3 +207,4 @@ router.post('/register', async (req, res) => {
 });
 
 module.exports = router;
+  
